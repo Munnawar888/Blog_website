@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Moon Blog</title>
+    <link rel="stylesheet" href="/blog/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/115026860d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <div
+        class="d-flex justify-content-center align-items-center flex-column py-5"
+      >
+        <h1 class="main_heading">Moon Technical</h1>
+        <p class="main_heading_para">
+          Welcome to my
+          <span class="text-capitalize bg-dark text-white py-2 px-3"
+            >World Of Blog</span
+          >
+        </p>
+      </div>
+      <div
+        class="main_header_div d-flex align-items-start justify-content-center pl-5 flex-column shadow"
+      >
+        <p>Moon technical</p>
+        <h2 class="animateword">
+          <span>I am</span>
+          <div>
+            <ul class="flip">
+              <li>a Frontend Devloper</li>
+              <li>a WordPress Developer</li>
+              <li>a Web designer</li>
+              <li>a Coder</li>
+            </ul>
+          </div>
+        </h2>
+        <button class="uppercase">Subscribe</button>
+      </div>
+    </header>
+
+    <!-- body -->
+    <div class="container-fluid">
+      <div class="row">
+        <!-- left and right side space -->
+        <div class="col-xl-10 col-lg-10 col-md-11 col-11 mx-auto my-5">
+          <div class="row gx-5 mx-sm-auto">
+            <!-- left side -->
+            <div class="col-lg-8 col-md-11 col-11 mx-auto">
+              <div class="row gy-5">
+                <!-- our first blog -->
+                <div class="col-12 card p-4 shadow blog_left_div">
+                  <div
+                    class="d-flex justify-content-center align-items-center flex-column pb-5 pt-3"
+                  >
+                    <h1>Best Html Tips</h1>
+                    <p class="blog_title">
+                      <span class="font-weight-bold">Title description,</span>
+                      Aug 11, 2022
+                    </p>
+                  </div>
+                  <figure class="right_side_img mb-5">
+                    <img src="/blog/images/web1.jpg" class="img-fluid shadow" />
+                  </figure>
+                  <p>
+                    <span class="font-weight-bold">Moon Technical</span>
+                    Welcome, Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Accusantium saepe aliquam impedit dolore autem aliquid
+                    porro error reprehenderit qui culpa alias ea, iste quo,
+                    temporibus aperiam? Omnis iusto expedita sit.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iste fugit, ipsa non delectus laborum aliquid doloribus quo
+                    cupiditate eos placeat, sapiente sequi sit est neque
+                    voluptatibus vel eaque illo possimus?
+                  </p>
+                  <div class="d-flex justify-content-between left_div_btns">
+                    <div>
+                      <button class="left_div_like" id="like_btn">
+                        <i class="fas fa-thumbs-up"></i> Like
+                      </button>
+                    </div>
+                    <div>
+                      <button class="left_div_reply" onclick="reply('reply1')">
+                        Replies <badge class="bg-white text-dark p-2">1</badge>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="replies" id="reply1">
+                    <div
+                      class="d-flex justify-content-start flex-row align-self-center card reply_card py-3"
+                    >
+                      <div class="reply_img mx-2 align-item-center">
+                        <img
+                          src="/blog/images/thumbnail.png"
+                          class="img-thumbnail"
+                        />
+                      </div>
+                      <div class="reply_text_left">
+                        <p class="blog_title">
+                          <span class="font-weight-bold"> Name, </span> Aug 12,
+                          2022, 7:20 PM
+                        </p>
+                        <p>Awesome bro, I love yuor content.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                 <!-- our second blog -->
+                 <div class="col-12 card p-4 shadow blog_left_div">
+                  <div
+                    class="d-flex justify-content-center align-items-center flex-column pb-5 pt-3"
+                  >
+                    <h1>Best coding Tips</h1>
+                    <p class="blog_title">
+                      <span class="font-weight-bold">Title description,</span>
+                      Aug 12, 2022
+                    </p>
+                  </div>
+                  <figure class="right_side_img mb-5">
+                    <img src="/blog/images/web2.jpg" class="img-fluid shadow" />
+                  </figure>
+                  <p>
+                    <span class="font-weight-bold">Moon Technical</span>
+                    Welcome, Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Accusantium saepe aliquam impedit dolore autem aliquid
+                    porro error reprehenderit qui culpa alias ea, iste quo,
+                    temporibus aperiam? Omnis iusto expedita sit.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iste fugit, ipsa non delectus laborum aliquid doloribus quo
+                    cupiditate eos placeat, sapiente sequi sit est neque
+                    voluptatibus vel eaque illo possimus?
+                  </p>
+                  <div class="d-flex justify-content-between left_div_btns">
+                    <div>
+                      <button class="left_div_like" id="like_btn">
+                        <i class="fas fa-thumbs-up"></i> Like
+                      </button>
+                    </div>
+                    <div>
+                      <button class="left_div_reply" onclick="reply('reply2')">
+                        Replies <badge class="bg-white text-dark p-2">1</badge>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="replies" id="reply2">
+                    <div
+                      class="d-flex justify-content-start flex-row align-self-center card reply_card py-3"
+                    >
+                      <div class="reply_img mx-2 align-item-center">
+                        <img
+                          src="/blog/images/thumbnail.png"
+                          class="img-thumbnail"
+                        />
+                      </div>
+                      <div class="reply_text_left">
+                        <p class="blog_title">
+                          <span class="font-weight-bold"> Name, </span> Aug 13,
+                          2022, 7:20 PM
+                        </p>
+                        <p>Awesome bro, I love yuor content.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                 <!-- our third blog -->
+                 <div class="col-12 card p-4 shadow blog_left_div">
+                  <div
+                    class="d-flex justify-content-center align-items-center flex-column pb-5 pt-3"
+                  >
+                    <h1>Best frontend Tips</h1>
+                    <p class="blog_title">
+                      <span class="font-weight-bold">Title description,</span>
+                      Aug 13, 2022
+                    </p>
+                  </div>
+                  <figure class="right_side_img mb-5">
+                    <img src="/blog/images/web3.jpg" class="img-fluid shadow" />
+                  </figure>
+                  <p>
+                    <span class="font-weight-bold">Moon Technical</span>
+                    Welcome, Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Accusantium saepe aliquam impedit dolore autem aliquid
+                    porro error reprehenderit qui culpa alias ea, iste quo,
+                    temporibus aperiam? Omnis iusto expedita sit.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iste fugit, ipsa non delectus laborum aliquid doloribus quo
+                    cupiditate eos placeat, sapiente sequi sit est neque
+                    voluptatibus vel eaque illo possimus?
+                  </p>
+                  <div class="d-flex justify-content-between left_div_btns">
+                    <div>
+                      <button class="left_div_like" id="like_btn">
+                        <i class="fas fa-thumbs-up"></i> Like
+                      </button>
+                    </div>
+                    <div>
+                      <button class="left_div_reply" onclick="reply('reply3')">
+                        Replies <badge class="bg-white text-dark p-2">1</badge>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="replies" id="reply3">
+                    <div
+                      class="d-flex justify-content-start flex-row align-self-center card reply_card py-3"
+                    >
+                      <div class="reply_img mx-2 align-item-center">
+                        <img
+                          src="/blog/images/thumbnail.png"
+                          class="img-thumbnail"
+                        />
+                      </div>
+                      <div class="reply_text_left">
+                        <p class="blog_title">
+                          <span class="font-weight-bold"> Name, </span> Aug 14,
+                          2022, 7:20 PM
+                        </p>
+                        <p>Awesome bro, I like it.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-7 col-11 justify-content-end m-lg-0 m-auto">
+              <div class="row gy-5 left-div-blog">
+                <!-- about me -->
+                <div class="col-12 about-me shadow">
+                  <p>Munnawar Hussain</p>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit laudantium quisquam perspiciatis molestias dicta dolorem, illo quo fuga eveniet quam.</p>
+                </div>
+                <!-- popular post -->
+                <div class="popular-post">
+                  <div class="right-div-title py-4 pl-2">
+                    <h2>Popular posts</h2>
+                  </div>
+                  <div class="right-sub-div shadow">
+                    <div class="row">
+                      <div class="col-3 popular-post-img1 py-2 pl-2"></div>
+                      <div class="col-9">
+                        <h3>Best extension </h3>
+                        <p class="text-capitalize">VS code</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-3 popular-post-img1 py-2 pl-2"></div>
+                      <div class="col-9">
+                        <h3>Fetching </h3>
+                        <p class="text-capitalize">Javascript</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-3 popular-post-img1 py-2 pl-2"></div>
+                      <div class="col-9">
+                        <h3>Figma </h3>
+                        <p class="text-capitalize">How to design web</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- advertise part -->
+                <div class="right-div-post">
+                  <div class="right-div-title py-4 pl-2">
+                    <h2>Advertisement</h2>
+                  </div>
+                  <div class="right-sub-div">
+                    <div class="advertise-img bg-light shadow">
+                      <p>Ads here</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- adv end -->
+                <!-- tags -->
+                <div class="right-div-post">
+                  <div class="right-div-title py-4 pl-2">
+                    <h2>Tags</h2>
+                  </div>
+                  <div class="tags-main right-sub-div">
+                    <a href="#" class="badge shadow text-capitalize">html</a>
+                    <a href="#" class="badge shadow 
+                    text-capitalize">css</a>
+                    <a href="#" class="badge shadow text-capitalize">javascript</a>
+                    <a href="#" class="badge shadow text-capitalize">bootstrap</a>
+                    <a href="#" class="badge shadow text-capitalize">react js</a>
+                    <a href="#" class="badge shadow text-capitalize">font awesome</a>
+                    <a href="#" class="badge shadow text-capitalize">wordpress</a>
+                    <a href="#" class="badge shadow text-capitalize">figma</a>
+                    <a href="#" class="badge shadow text-capitalize">web design</a>
+                  </div>
+                </div>
+                <!-- tags end -->
+                <!-- follow -->
+                <div class="right-div-post">
+                  <div class="right-div-title py-4 pl-2">
+                    <h2>Follow Me</h2>
+                  </div>
+                  <div class="right-sub-div d-flex justify-content-around">
+                    <a href="#"><i class="fab fa-3x fa-facebook-square"></i> </a>
+                    <a href="#"><i class="fab fa-3x fa-instagram-square"></i> </a>
+                    <a href="#"><i class="fab fa-3x fa-github-square"></i> </a>
+                    <a href="#"><i class="fab fa-3x fa-twitter-square"></i> </a>
+                    <a href="#"><i class="fab fa-3x fa-linkedin-square"></i> </a>
+                  </div>
+              </div>
+              <!-- subscribe newsletter -->
+              <div class="right-div-post">
+                <div class="right-div-title py-4 pl-2">
+                  <h2>Subscribe Me</h2>
+                </div>
+                <div class="right-sub-div ">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Enter your email below and get notified on the latest posts.</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@gmail.com">
+                      <div id="emailHelp" class="form-text"></div>
+                    </div>
+                    
+                    <button type="submit" class="subs-btn d-block">Submit</button>
+                  </form>
+                
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="/blog/index.js"></script>
+  </body>
+</html>
